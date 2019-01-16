@@ -43,7 +43,7 @@ def main():
   parser = argparse.ArgumentParser()
   parser.add_argument('--base_dir', default=os.getcwd())
   parser.add_argument('--output', default='training')
-  parser.add_argument('--dataset', default='ljspeech',required=True, choices=['blizzard', 'ljspeech', 'blizzard2013'])
+  parser.add_argument('--dataset', default='ljspeech', choices=['blizzard', 'ljspeech', 'blizzard2013'])
   parser.add_argument('--num_workers', type=int, default=cpu_count())
   args = parser.parse_args()
   if args.dataset == 'blizzard':
